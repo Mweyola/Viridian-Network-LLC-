@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Brief summaries of common IT network topologies and where they are used today."
+    />
+    <title>IT Networks | Viridian Network LLC</title>
+    <link rel="stylesheet" href="/it-networks.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="nav">
+        <div class="brand">
+          <span class="dot"></span>
+          <span class="wordmark">Viridian Network LLC</span>
+        </div>
+        <a class="button subtle" href="/">Back to home</a>
+      </header>
+
+      <main class="content">
+        <section class="hero">
+          <p class="kicker">IT Networks</p>
+          <h1>Common network topologies at a glance.</h1>
+          <p class="lead">
+            Short, practical summaries of how each topology is structured, its
+            strengths and tradeoffs, and where it shows up today.
+          </p>
+        </section>
+
+        <section class="grid">
+          <article class="card">
+            <div class="card__header">
+              <h2>1. Bus Topology</h2>
+              <span class="status off">Used today? Mostly obsolete</span>
+            </div>
+            <p class="muted">All devices share a single central cable (the bus).</p>
+            <div class="columns">
+              <div>
+                <p class="label">Pros</p>
+                <ul>
+                  <li>Cheap</li>
+                  <li>Simple to set up</li>
+                  <li>Minimal cabling</li>
+                </ul>
+              </div>
+              <div>
+                <p class="label">Cons</p>
+                <ul>
+                  <li>One cable failure breaks everything</li>
+                  <li>Poor performance as devices increase</li>
+                  <li>Hard to troubleshoot</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__header">
+              <h2>2. Star Topology</h2>
+              <span class="status on">Used today? Most common</span>
+            </div>
+            <p class="muted">All devices connect to a central switch or hub.</p>
+            <div class="columns">
+              <div>
+                <p class="label">Pros</p>
+                <ul>
+                  <li>Easy to manage</li>
+                  <li>One device failure does not affect others</li>
+                  <li>Scales well</li>
+                </ul>
+              </div>
+              <div>
+                <p class="label">Cons</p>
+                <ul>
+                  <li>Central device is a single point of failure</li>
+                  <li>More cabling than bus</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__header">
+              <h2>3. Ring Topology</h2>
+              <span class="status off">Used today? Rare</span>
+            </div>
+            <p class="muted">Devices form a closed loop; data travels in one or both directions.</p>
+            <div class="columns">
+              <div>
+                <p class="label">Pros</p>
+                <ul>
+                  <li>Predictable performance</li>
+                  <li>No collisions</li>
+                </ul>
+              </div>
+              <div>
+                <p class="label">Cons</p>
+                <ul>
+                  <li>One break can stop the ring</li>
+                  <li>Difficult to reconfigure</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__header">
+              <h2>4. Mesh Topology</h2>
+              <span class="status on">Used today? Yes</span>
+            </div>
+            <p class="muted">Devices connect to many or all other devices.</p>
+            <div class="columns">
+              <div>
+                <p class="label">Pros</p>
+                <ul>
+                  <li>Very high reliability</li>
+                  <li>Multiple paths for data</li>
+                  <li>Excellent fault tolerance</li>
+                </ul>
+              </div>
+              <div>
+                <p class="label">Cons</p>
+                <ul>
+                  <li>Expensive</li>
+                  <li>Complex to manage</li>
+                  <li>Lots of cabling or radio links</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__header">
+              <h2>5. Tree (Hierarchical) Topology</h2>
+              <span class="status on">Used today? Yes</span>
+            </div>
+            <p class="muted">Star networks connected in layers (root to branches to leaves).</p>
+            <div class="columns">
+              <div>
+                <p class="label">Pros</p>
+                <ul>
+                  <li>Highly scalable</li>
+                  <li>Organized structure</li>
+                  <li>Easy segmentation</li>
+                </ul>
+              </div>
+              <div>
+                <p class="label">Cons</p>
+                <ul>
+                  <li>Root failure affects many nodes</li>
+                  <li>More complex setup</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__header">
+              <h2>6. Hybrid Topology</h2>
+              <span class="status on">Used today? Yes</span>
+            </div>
+            <p class="muted">Combination of two or more topologies (for example, star + mesh).</p>
+            <div class="columns">
+              <div>
+                <p class="label">Pros</p>
+                <ul>
+                  <li>Flexible</li>
+                  <li>Optimized for real needs</li>
+                  <li>Scales well</li>
+                </ul>
+              </div>
+              <div>
+                <p class="label">Cons</p>
+                <ul>
+                  <li>Design complexity</li>
+                  <li>Higher cost</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__header">
+              <h2>7. Point-to-Point Topology</h2>
+              <span class="status on">Used today? Yes</span>
+            </div>
+            <p class="muted">Direct link between two devices.</p>
+            <div class="columns">
+              <div>
+                <p class="label">Pros</p>
+                <ul>
+                  <li>Simple</li>
+                  <li>Fast</li>
+                  <li>Secure</li>
+                </ul>
+              </div>
+              <div>
+                <p class="label">Cons</p>
+                <ul>
+                  <li>Not scalable</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section class="trusted">
+          <div class="section__heading">
+            <p class="kicker">Products we trust</p>
+            <h2>Battle-tested gear for secure branch networks.</h2>
+            <p class="muted">A small selection of hardware we rely on for stability and uptime.</p>
+          </div>
+          <div class="trusted-grid">
+            <a
+              class="trusted-card"
+              href="https://amzn.to/49MC4sY"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="/images/MX64.jpg"
+                alt="Cisco Meraki MX64 Small Branch Security Appliance"
+                loading="lazy"
+              />
+              <div class="trusted-card__body">
+                <h3>Cisco Meraki MX64</h3>
+                <p class="muted">Small branch security appliance for reliable edge protection.</p>
+                <span class="trusted-link">View product</span>
+              </div>
+            </a>
+            <a
+              class="trusted-card"
+              href="https://amzn.to/4jONf9d"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="/images/MikroTik.jpg"
+                alt="MikroTik hAP ac lite Dual-concurrent Access Point (RB952Ui-5ac2nD-US)"
+                loading="lazy"
+              />
+              <div class="trusted-card__body">
+                <h3>MikroTik hAP ac lite</h3>
+                <p class="muted">Dual-concurrent access point that punches above its price point for small networks.</p>
+                <span class="trusted-link">View product</span>
+              </div>
+            </a>
+            <a
+              class="trusted-card"
+              href="https://amzn.to/4qmE9mp"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="/images/TPLINK.jpg"
+                alt="TP-Link EAP225 Omada AC1350 Gigabit Wireless Access Point"
+                loading="lazy"
+              />
+              <div class="trusted-card__body">
+                <h3>TP-Link EAP225</h3>
+                <p class="muted">Solid ceiling-mount access point with mesh support and seamless roaming.</p>
+                <span class="trusted-link">View product</span>
+              </div>
+            </a>
+            <a
+              class="trusted-card"
+              href="https://amzn.to/4jHcav2"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="/images/Ubi.jpg"
+                alt="Ubiquiti U6+ Dual Band Wi-Fi 6 Access Point"
+                loading="lazy"
+              />
+              <div class="trusted-card__body">
+                <h3>Ubiquiti U6+</h3>
+                <p class="muted">Wi-Fi 6 access point with strong throughput and clean UniFi management.</p>
+                <span class="trusted-link">View product</span>
+              </div>
+            </a>
+            <a
+              class="trusted-card"
+              href="https://amzn.to/4b5p6J6"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="/images/TPLinkswitch.jpg"
+                alt="TP-Link TL-SG2008 V3 8 Port Gigabit Smart Managed Switch"
+                loading="lazy"
+              />
+              <div class="trusted-card__body">
+                <h3>TP-Link TL-SG2008</h3>
+                <p class="muted">Smart managed switch with Omada SDN integration and flexible QoS.</p>
+                <span class="trusted-link">View product</span>
+              </div>
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p class="muted">Viridian Network LLC - infrastructure that scales with clarity.</p>
+      </footer>
+    </div>
+  </body>
+</html>

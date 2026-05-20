@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Viridian Network LLC designs resilient IT networks with modern LAN topologies and high-availability patterns.">
+  <title>IT Networks | Viridian Network LLC</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page">
+    <header class="nav">
+      <div class="brand">
+        <span class="dot"></span>
+        <span class="wordmark">Viridian Network LLC</span>
+      </div>
+      <div class="nav-pill">IT Networks</div>
+      <div class="nav-actions">
+        <a class="button subtle" href="index.html">Home</a>
+        <div class="nav-dropdown" data-dropdown>
+          <button class="nav-dropdown__button" type="button" aria-expanded="false">
+            Network services
+            <i class="nav-dropdown__chevron"></i>
+          </button>
+          <div class="nav-dropdown__menu" role="menu">
+            <a class="nav-dropdown__item" href="it-networks.html" role="menuitem">IT Networks<span>Infra, Wi-Fi, security</span></a>
+            <a class="nav-dropdown__item" href="workflow-networks.html" role="menuitem">Workflow Networks<span>Automations, n8n, Zapier</span></a>
+            <a class="nav-dropdown__item" href="backlink-networks.html" role="menuitem">Backlink Networks<span>Authority and discoverability</span></a>
+          </div>
+        </div>
+        <a class="button subtle" href="#topologies">Topologies</a>
+        <a class="button subtle" href="#contact">Book a consult</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__content">
+          <p class="kicker">IT networks</p>
+          <h1>We build LANs that stay online and stay observable.</h1>
+          <p class="lead">
+            From access to core, we use proven topologies, high-availability patterns, and clean documentation so your network is easy to extend and easy to trust.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="#contact">Scope an engagement</a>
+            <a class="button ghost" href="#topologies">See topologies</a>
+          </div>
+          <div class="badges">
+            <span class="badge">Zero-downtime cutovers</span>
+            <span class="badge">Segmentation & zero trust</span>
+            <span class="badge">Site to cloud</span>
+          </div>
+        </div>
+        <div class="hero__panel">
+          <div class="panel">
+            <div class="panel__header">
+              <span class="mini-dot"></span>
+              <span class="panel__title">What we deliver</span>
+            </div>
+            <ul class="panel__list">
+              <li>
+                <div>
+                  <p class="label">Topology clarity</p>
+                  <p class="muted">Diagrammed core/distribution/access and uplinks.</p>
+                </div>
+                <span class="pill positive">Documented</span>
+              </li>
+              <li>
+                <div>
+                  <p class="label">Resilience</p>
+                  <p class="muted">Redundant paths, failover tests, runbooks.</p>
+                </div>
+                <span class="pill neutral">Tested</span>
+              </li>
+              <li>
+                <div>
+                  <p class="label">Visibility</p>
+                  <p class="muted">Health thresholds and alert routing that matters.</p>
+                </div>
+                <span class="pill accent">Clear</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="topologies" class="section cards">
+        <div class="section__heading">
+          <p class="kicker">Most common & important LAN topologies</p>
+          <h2>We choose the right topology for your scale, budget, and uptime targets.</h2>
+          <p class="muted">Modern networks mix patterns. We design with intent and document the tradeoffs so everyone understands why.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <div class="card__icon">Star</div>
+            <h3>Star topology</h3>
+            <p>All devices connect to a central switch, hub, or router.</p>
+            <ul class="list">
+              <li>Reality: The backbone of modern Ethernet LANs.</li>
+              <li>Why: Easy to manage, add/remove nodes, isolate faults.</li>
+              <li>Guardrails: Redundant uplinks and monitored core switches.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <div class="card__icon">Hybrid</div>
+            <h3>Hybrid topology</h3>
+            <p>Combines topologies (e.g., star-bus, star-ring) to meet specific needs.</p>
+            <ul class="list">
+              <li>Why: Blend strengths for complex campuses and enterprises.</li>
+              <li>Practice: Pair resilient cores with dedicated rings or spines.</li>
+              <li>Guardrails: Clear segmentation and consistent routing policy.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <div class="card__icon">Tree</div>
+            <h3>Tree (hierarchical)</h3>
+            <p>Root node branching out, combining star and bus in layers.</p>
+            <ul class="list">
+              <li>Why: Scales cleanly across departments and sites.</li>
+              <li>Practice: Core/distribution/access with deterministic VLAN plans.</li>
+              <li>Guardrails: Defined oversubscription ratios and QoS at edges.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section cards">
+        <div class="section__heading">
+          <p class="kicker">Other foundational topologies</p>
+          <h2>Know the tradeoffs before you inherit them.</h2>
+          <p class="muted">Legacy or specialized patterns appear in mergers and remote sites. We stabilize, modernize, or phase them out with a plan.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <div class="card__icon">Bus</div>
+            <h3>Bus topology</h3>
+            <p>All devices share one main cable.</p>
+            <ul class="list">
+              <li>Why: Cost-effective simplicity.</li>
+              <li>Reality: Collision-prone and single point of failure; mostly legacy.</li>
+              <li>Action: Assess and migrate to segmented switched access.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <div class="card__icon">Ring</div>
+            <h3>Ring topology</h3>
+            <p>Devices form a closed loop; data travels one direction (e.g., Token Ring).</p>
+            <ul class="list">
+              <li>Why: Deterministic paths in older environments.</li>
+              <li>Reality: Mostly legacy; single break can disrupt the loop.</li>
+              <li>Action: Replace with dual-star or tree with monitored redundancy.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <div class="card__icon">Mesh</div>
+            <h3>Mesh topology</h3>
+            <p>Many interconnections for maximum redundancy.</p>
+            <ul class="list">
+              <li>Why: Highest resilience for critical nodes.</li>
+              <li>Reality: Expensive; partial mesh is common to balance cost.</li>
+              <li>Action: Use where uptime is paramount; document failover paths.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split">
+        <div>
+          <p class="kicker">How we approach LANs</p>
+          <h2>Availability first, then simplicity, then scale.</h2>
+          <p class="muted">We design with redundancy, test for failure, and leave you with diagrams and runbooks that actually match production.</p>
+          <div class="stacked">
+            <div class="stacked__item">
+              <span class="tick">&#10003;</span>
+              <div>
+                <p class="label">Assess</p>
+                <p class="muted">Document current topology, cabling, and uplinks; flag single points of failure.</p>
+              </div>
+            </div>
+            <div class="stacked__item">
+              <span class="tick">&#10003;</span>
+              <div>
+                <p class="label">Design & migrate</p>
+                <p class="muted">Select topology, plan cutovers, and script configs for consistent rollouts.</p>
+              </div>
+            </div>
+            <div class="stacked__item">
+              <span class="tick">&#10003;</span>
+              <div>
+                <p class="label">Operate</p>
+                <p class="muted">Monitoring, alert routing, and drills so teams know what to do when links fail.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="callout">
+          <div class="callout__inner">
+            <p class="kicker">Outcomes</p>
+            <h3>LANs that survive change.</h3>
+            <p class="muted">We keep management simple while giving you redundant paths, clear QoS, and zero-trust segmentation.</p>
+            <div class="metrics">
+              <div>
+                <p class="metric">99.9%</p>
+                <p class="muted">Target availability patterns</p>
+              </div>
+              <div>
+                <p class="metric"><span class="muted">~</span>0</p>
+                <p class="muted">Unplanned downtime during cutovers</p>
+              </div>
+              <div>
+                <p class="metric">48h</p>
+                <p class="muted">Typical time to deliver network map</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cards">
+        <div class="section__heading">
+          <p class="kicker">Recommended gear</p>
+          <h2>Field-tested IT network hardware we trust.</h2>
+          <p class="muted">Affiliate links earn us a commission at no extra cost to you.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <div class="card__icon">MX</div>
+            <h3>Cisco Meraki MX64</h3>
+            <p>Small-branch security appliance with cloud-managed simplicity.</p>
+            <ul class="list">
+              <li>Next-gen firewall with VPN and SD-WAN features.</li>
+              <li>Ideal for small sites needing centralized policies.</li>
+              <li>Plug-and-manage with Meraki dashboard visibility.</li>
+            </ul>
+            <div class="actions">
+              <a class="button primary" href="https://amzn.to/4j6Izv3" target="_blank" rel="noopener noreferrer">View on Amazon</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="contact__card">
+          <p class="kicker">Start a conversation</p>
+          <h2>Tell us about your sites and goals.</h2>
+          <p class="muted">We&#8217;ll propose the topology, migration plan, and monitoring you need for reliable growth.</p>
+          <div class="actions">
+            <a class="button primary" href="mailto:hello@viridiannetwork.com">hello@viridiannetwork.com</a>
+            <a class="button ghost" href="index.html">Back to overview</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="muted">&copy; Viridian Network LLC &#8212; IT networks designed for uptime.</p>
+    </footer>
+  </div>
+  <script>
+    const dropdowns = document.querySelectorAll('[data-dropdown]');
+    dropdowns.forEach((dropdown) => {
+      const button = dropdown.querySelector('.nav-dropdown__button');
+      const menu = dropdown.querySelector('.nav-dropdown__menu');
+      const closeAll = () => {
+        dropdowns.forEach((d) => {
+          d.classList.remove('open');
+          const b = d.querySelector('.nav-dropdown__button');
+          if (b) b.setAttribute('aria-expanded', 'false');
+        });
+      };
+      button.addEventListener('click', (e) => {
+        const isOpen = dropdown.classList.contains('open');
+        closeAll();
+        if (!isOpen) {
+          dropdown.classList.add('open');
+          button.setAttribute('aria-expanded', 'true');
+        }
+        e.stopPropagation();
+      });
+      document.addEventListener('click', (e) => {
+        if (!dropdown.contains(e.target)) {
+          dropdown.classList.remove('open');
+          button.setAttribute('aria-expanded', 'false');
+        }
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          closeAll();
+        }
+      });
+      menu.addEventListener('click', () => closeAll());
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Local private documents that should not be deployed or committed
+/*.pdf
+/*w2*.jpg
+/*W2*.jpg
+/*1099*.jpg
+/*bank*.jpg
+/*Bank*.jpg
+/*statement*.jpg
+/*Statement*.jpg
+/*expence*.jpg
+/*expense*.jpg
+
+# Root-level image duplicates; keep deployable assets under public/
+/*.png
+/*.jpg
+!/public/**/*.png
+!/public/**/*.jpg
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
