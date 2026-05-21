@@ -1,16 +1,106 @@
-# React + Vite
+# Viridian Network LLC
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Technology is not isolated.
+Everything is a network.
 
-Currently, two official plugins are available:
+Viridian Network LLC is a systems-focused technology company centered around the idea that businesses succeed or fail based on how well their systems communicate.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is the official website and digital foundation for the Viridian Network brand.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Philosophy
 
-## Expanding the ESLint configuration
+Most operational failures are not singular problems.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+They are communication problems between:
+
+* people
+* software
+* infrastructure
+* workflows
+* data
+* expectations
+
+Viridian approaches technology as an interconnected system rather than a collection of disconnected tools.
+
+---
+
+# Core Areas
+
+## Lead Handling
+
+Transform inquiries, calls, forms, and messages into structured follow-up systems.
+
+## Workflow Automation
+
+Connect repetitive business tasks through automation pipelines, triggers, and operational workflows.
+
+## Web Infrastructure
+
+Modern websites built to communicate clearly, capture demand, and integrate into business operations.
+
+## System Clarity
+
+Architecture mapping and systems analysis showing how people, tools, and processes interact.
+
+---
+
+# Technology Stack
+
+Built using:
+
+* React
+* Vite
+* JavaScript
+* HTML/CSS
+
+---
+
+# Development
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run development server:
+
+```bash
+npm run dev
+```
+
+Build production version:
+
+```bash
+npm run build
+```
+
+---
+
+# Vision
+
+The long-term goal of Viridian Network LLC is to evolve into a systems intelligence and infrastructure company focused on:
+
+* operational architecture
+* automation systems
+* AI integration
+* digital infrastructure
+* workflow intelligence
+* scalable software ecosystems
+
+---
+
+# Repository
+
+GitHub Repository:
+
+https://github.com/Mweyola/Viridian-Network-LLC-
+
+---
+
+# Author
+
+Arnold Mweyola
+Founder — Viridian Network LLC
