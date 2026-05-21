@@ -5,6 +5,7 @@ function App() {
   const [isConsultOpen, setIsConsultOpen] = useState(false)
   const [isContactOpen, setIsContactOpen] = useState(false)
   const [isPortfolioOpen, setIsPortfolioOpen] = useState(false)
+  const [isDemoOpen, setIsDemoOpen] = useState(false)
 
   useEffect(() => {
     const handleKeyDown = (event) => {
@@ -70,6 +71,14 @@ function App() {
             onClick={() => setIsConsultOpen(true)}
           >
             Start a Conversation
+          </button>
+          <button
+            className="button button--primary"
+            type="button"
+            onClick={() => setIsDemoOpen(true)}
+            style={{ marginLeft: 8 }}
+          >
+            Analyze Your System
           </button>
         </div>
       </header>
@@ -357,6 +366,36 @@ function App() {
                 <button className="button button--primary" type="submit">Send</button>
               </div>
             </form>
+          </div>
+        </div>
+      )}
+
+      {isDemoOpen && (
+        <div className="modal" role="dialog" aria-modal="true" aria-label="Systems Intelligence Demo">
+          <div
+            className="modal__backdrop"
+            onClick={() => setIsDemoOpen(false)}
+            role="button"
+            tabIndex={0}
+          ></div>
+          <div className="modal__panel modal__panel--wide">
+            <div className="modal__header">
+              <div>
+                <p className="eyebrow">Analyze Your System</p>
+                <h3>Try a lightweight systems intelligence demo</h3>
+              </div>
+              <button
+                className="modal__close"
+                type="button"
+                onClick={() => setIsDemoOpen(false)}
+                aria-label="Close"
+              >
+                X
+              </button>
+            </div>
+            <div style={{ height: '70vh' }}>
+              <iframe title="Viridian Systems Demo" src="/demo/index.html" style={{ width: '100%', height: '100%', border: '0' }} />
+            </div>
           </div>
         </div>
       )}
