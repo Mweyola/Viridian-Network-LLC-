@@ -11,6 +11,8 @@ node_modules
 dist
 dist-ssr
 *.local
+.env
+.env.*
 *.zip
 
 # Local private documents that should not be deployed or committed
